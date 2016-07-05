@@ -20,6 +20,8 @@ update: (output, domEl) ->
     <img src=#{this.imgsrc}/>
     """
   $(container).html content
+  $(domEl).css left: (window.innerWidth/2)-424
+
 
 # CSS Style
 style: """
