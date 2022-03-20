@@ -1,5 +1,5 @@
 # Replace yrimg with your 48h forecast url from http://yr.no
-yrimg =	"http://www.yr.no/place/Sweden/Västra_Götaland/Gothenburg/meteogram.png"
+yrimg =	"https://www.yr.no/en/content/2-2711537/meteogram.svg"
 imgsrc:	yrimg
 
 command: ""
@@ -17,7 +17,7 @@ update: (output, domEl) ->
   container = $(domEl).find('#container')
   content =
     """
-    <img src=#{this.imgsrc}/>
+    <img src='#{this.imgsrc}' />
     """
   $(container).html content
   $(domEl).css left: (window.innerWidth/2)-424
